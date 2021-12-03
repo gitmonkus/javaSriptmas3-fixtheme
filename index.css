@@ -1,0 +1,99 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: var(--light-green);
+    height: 100vh;
+}
+
+.container {
+    background: var(--snow);
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 1em;
+    min-width: 550px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    font-size: 45px;
+    font-family: 'Rubik Beastly', cursive;
+    color: var(--bright-red);
+}
+
+button {
+    padding: 1em 2em;
+    border: none;
+    font-size: 20px;
+    background-color: var(--bright-red);
+    color: var(--snow);
+    border-radius: 999px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--wine-red);
+}
+
+/* PAGES */
+
+.fixing {
+    background: url(img/fixing.jpg);
+    background-size: cover;
+}
+
+.toofar {
+    background: url(img/toofar.jpg);
+    background-size: cover;
+}
+.toofar .container {
+    opacity: .7;
+    background: black;
+    font-family: 'Creepster', cursive;
+}
+.toofar button {
+    background: black;
+    color: var(--bright-red);
+    font-weight: bold;
+    box-shadow: 2px 2px 20px red;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+}
+
+.fixed {
+    background: url(img/fixing.jpg);
+    background-size: cover;
+    
+}
+
+.fixed .container {
+    opacity: .8;
+    background: var(--snow);
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bold;
+}
+
+.fixed button {
+    background: var(--snow);
+    color: var(--light-green);
+    font-weight: bold;
+    box-shadow: 2px 2px 20px var(--bright-red);
+    border-radius: 10px;
+}
